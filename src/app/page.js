@@ -1,5 +1,6 @@
 import React from "react";
-
+import { mockData } from "../data/data";
+import ProductCard from "../components/productcard";
 
 export default function Home() {
   return (
@@ -12,6 +13,11 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="flex-grow p-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {mockData.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
+      </div>
         <section className="bg-white rounded-lg shadow-md p-6 mb-6">
           <h2 className="text-2xl font-semibold mb-4 text-yellow-500">Om Isover</h2>
           <p className="text-base text-gray-700">

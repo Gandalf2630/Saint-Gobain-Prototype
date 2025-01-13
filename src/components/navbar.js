@@ -13,12 +13,12 @@ export default function Navbar() {
                     </li>
 
                     <li className="hover:text-yellow-400">
-                       <Link href="/hjælp">Hjælp</Link>
+                       <Link href="/kundeservice">Kundservice</Link>
                     </li>
                     <li className="hover:text-yellow-400">
-                       <Link href="/info">Info</Link> 
+                       <Link href="/info">Bæredygtighed</Link> 
                     </li>
-                </ul>
+                </ul> 
             </nav>
         </div>
     )
